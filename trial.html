@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+
+.marqu {
+	text-align: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+}
+.black {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+nav {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	top: -20px;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	z-index: 1000;
+	background: #fff;
+	justify-content: space-around;
+	transition: 1.5s;
+	align-items: center;
+}
+nav ul {
+	display: flex;
+	align-items: center;
+}
+nav ul li {
+	list-style: none;
+	margin: 5px 10px;
+}
+nav ul li a {
+	padding: 2px 10px;
+	color: #2e2e2e;
+	cursor: pointer;
+	transition: .5s;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	color: #fff;
+	border-radius: 5px;
+	background: #f50909;
+}
+.active {
+	color: #fff;
+	border-radius: 5px;
+	background: #f50909;
+}
+.srch {
+	padding: 2px 10px;
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+	/* background: #0066ff; */
+	border: 1px solid;
+	border-radius: 20px;
+}
+.srch img {
+	width: 25px;
+	cursor: pointer;
+}
+.srch .search {
+	/* padding: 2px 10px; */
+	outline: none;
+	border: none;
+	background: transparent;
+}
+
+.get-started {
+	margin-left: 90px;
+	padding: 5px 20px;
+	
+	
+	border-radius: 20px;
+	text-decoration: none;
+	
+	transition: .5s;
+	background-color: #f71010;
+	color: #fff;
+}
+.get-started:hover {
+	color: #ffffff;
+	background: #8500dd;
+}
+.logo {
+	width: 300px;
+	cursor: pointer;
+	transition: all 1s;
+}
+
+a, button {
+	float: left;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+	color: #2E3D49;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+.btn-talknow{
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	size: 100px;
+}
+.btn-talknow:hover {
+	outline: none;
+	border-radius: 10px;
+	padding: 15px 25px;
+	transition-duration: .4s;
+}
+.cont2 {
+	margin-top: 150px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	background-image: url('eco.jpeg');
+  background-size: cover;
+  height: 800px;
+  border-radius: 60px;
+  
+}
+/*.quote {
+	width: 900px;
+	background-color: bisque;
+	border-radius: 100px;
+
+
+}
+
+
+.quote p 
+{
+	padding-top: 150px;
+	font-size: 55px;
+	color: rgb(15, 2, 2); 
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+
+}*/
+
+
+#slideshow {
+	overflow: hidden;
+	height: 500px;
+	/*width: 700px;*/
+	margin: 0 auto;
+	border-radius: 50px;
+}
+ 
+/* Style each of the sides
+with a fixed width and height */
+ 
+.slide {
+	float: left;
+	height: 500px;
+	width: 700px;
+}
+ 
+/* Add animation to the slides */
+ 
+.slide-wrapper {
+	 
+	/* Calculate the total width on the
+  basis of number of slides */
+	width: calc(728px * 4);
+	 
+	/* Specify the animation with the
+  duration and speed */
+	animation: slide 10s ease infinite;
+}
+ 
+/* Set the background color
+of each of the slides */
+ 
+.slide:nth-child(1) {
+	background-image: url('dept.jpeg');
+}
+ 
+.slide:nth-child(2) {
+	background-image: url('classroom1.jpg');
+}
+ 
+.slide:nth-child(3) {
+	background-image: url('hardwarelab1.jpg');
+}
+ 
+.slide:nth-child(4) {
+	background-image: url('lab1.jpg');
+}
+ 
+/* Define the animation
+for the slideshow */
+ 
+@keyframes slide {
+	 
+	/* Calculate the margin-left for
+  each of the slides */
+	20% {
+		margin-left: 0px;
+	}
+	40% {
+		margin-left: calc(-728px * 1);
+	}
+	60% {
+		margin-left: calc(-728px * 2);
+	}
+	80% {
+		margin-left: calc(-728px * 3);
+	}
+}
+
+.column-2 {
+	float: left;
+	/*width: 45%;*/
+	padding: 40px;
+	/*padding-left:70px;*/
+	padding-right: 70px;
+	height: 475px;
+	margin:30px;
+	margin-right:30px;
+	margin-bottom: 70px;
+	background-color: #FEDE00;
+	line-height:2;
+	border-radius: 40px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+hodmessage{
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #ddd;
+}
+.pic{
+  height: auto;
+  width:  302px;
+}
+.message{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+</style>
+   
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="index.html"><h1>Electronics and Computer Engineering department</h1></a></div>
+        <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="#about_section">About department</a></li>
+            <li><a href="#hodmessage">HOD's message</a></li>
+            <li><a href="#services_section">Classroom</a></li>
+            <li><a href="Mentors.html">Faculty</a></li>
+            <li><a href="#feedBACK">Downloads</a></li>
+            <li><a href="#contactus_section">Contact</a></li>
+            <li><a href="#contactus_section">E-CESA</a></li>
+        </ul>
+        
+        <!--<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="https://github.com/roshan9419/LearnEd_E-learning_Website/blob/master/images/icon/search.png?raw=true" alt="search" onclick=slide()></div>-->
+        <a class="get-started" href="login.html">Login</a>
+        
+        <a href="https://moderncoe.edu.in/"><img src="logo.png"></a>
+        
+        
+    </nav>
+  
+  
+   
+ 
+ 
+ 
+ 
+ 
+  <div class="cont2">
+    
+    <div id="slideshow">
+        <div class="slide-wrapper">
+             
+             
+            <!-- Define each of the slides
+         and write the content -->
+            <div class="slide">
+                <h1 class="slide-number">
+                    
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                     Classroom
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    Hardware Lab
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    Lab
+                </h1>
+            </div>
+        </div>
+    </div>
+    
+   
+  </div>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="column-2">
+            <h1> Electronics and Computer Engineering Deparment</h1>
+            <h4>Electronics and Computer Engineering is integration of two engineering fields “Electronics and Computer blended to meet the contemplating demands of electronics and computer-based industries in today’s world.”</h4><br>
+            <h4>The department continuously works on improving teaching learning process to better meet the needs of today’s students and employers. Many of the courses have laboratory components that enrich the students’ learning experience by allowing them to be exposed to theory and practice. We strive to provide our students with an outstanding educational experience that prepares them for the highest personal and professional achievements.</h4><br>
+            <h4>The department organizes workshops, seminars, technical talks, conferences, training programs, programming contests in association with theses professional societies regularly. Keeping in mind our social responsibilities, the department regularly participates in various social outreach programs like NSS, E-CESA (Electronics and Computer Engineering Student Association) organizes various activities such as group discussion, Brain storming sessions ,intra debate competition ,guest lectures, sports, cultural etc. to encourage students to hone their technical and nontechnical skills.</h4>    
+            <p></p>    
+        </div>
+	</div>
+
+
+
+    <section class="hodmessage" id="hodmessage">
+        <div class="message">
+          <!--<img src="girl.png" class="pic">-->
+          <div class="text">
+            <center><p style="font-size: 50px; padding: 120px">HOD's Message</p></center>
+            <h1>Prof. Dr. Arati Jeevan Vyavahare<span></span></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus ad sed harum itaque ullam enim quas, veniam accusantium, quia animi id eos adipisci iusto molestias asperiores explicabo cum vero atque amet corporis! Soluta illum facere consequuntur magni. Ullam dolorem repudiandae cumque voluptate consequatur consectetur, eos provident necessitatibus reiciendis corrupti!</p>
+            <div class="data">
+            
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+</div>
+
+
+
+
+
+
+  <!--footer -->
+  
+</body>
+</html>
